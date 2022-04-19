@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>seo tags</title>
+    <meta name="description" content="this pae is about seo tags" />
+    <meta name="keywords" content="seo, tags, about" />
+    <meta rel="canonical" href="https://www.google.com" />
+    <!--The rel attribute defines the relationship between a linked resource and the current document.-->
+    <meta name="robots" content="no index, no follow" />
+    <!--this attribute tells search engine whether to index this page not. it also tells the search engine crawler whether to crawl the linked webpages or not, so this is information about the content data(i.e about the links) and is therefore metadata and used inside meta tag-->
+    <!--An index is another name for the database used by a search engine. Indexes contain the information of all the websites/webpage that Google (or any other search engine) was able to find. If a website is not in a search engine's index, users will not be able to find it.-->
+  </head>
+  <body></body>
+</html>
+
+<!--contents of head elements are for user by user through search engine and browser-->
+<!--contents of body elements are for user by user directly-->
+<!--content of title tag is what actually appears in blue colour line in google search engine-->
+
+<!-- Canonical is the term used to describe an entity that adheres to an original, authoritative text or to a set of rules, principles, and criteria. 
+The adjective canonical is applied in many contexts to mean "according to the canon" – canon means -the standard, rule or primary source that is accepted as authoritative for the body of knowledge or literature in that context.
+This webpage has canonical relation to webpage www.google.com, mane this page is derived or related to primary/genuine webpage www.google.com
+-->
+
+<!--
+
+
+
+
+-->
+
+<!--
+
+HTML tags are code elements with the back-end of all web pages, but there are also specific HTML code types which provide search engines 
+with key info for SERP display. 
+
+1. Title tag:
+Title tags are used to set up those clickable headlines that you see in the SERP:
+Generally speaking, it's up to Google to create a SERP headline for your page, and it could use any of the section headings from within the page - or it may even create a new headline altogether.
+so SERP headline is picked up from Title tag, or any section header.
+
+
+2. Meta description tag:
+Meta description tags are used to set up descriptions within search result snippets:
+Google doesn't always use meta description tags to create these snippets, but if the meta tag is there, then there's a good chance that your meta description will make it onto the SERP.
+Keep in mind, however, that sometimes Google will ignore the meta description tag, and instead quote a bit of copy from the page. This normally happens when the quote is a better match for a particular query than the meta description would have been.
+Basically, Google will choose the best option for increasing your chances of click-through.
+
+3. Heading (H1-H6) tags:
+
+-Don’t use more than one H1 - H1 heading stands apart from other headings because it's treated by search engines as the title of the page. Not to be confused with the title tag - the title tag is displayed in search results, while the H1 tag is displayed on your website.​
+-Maintain shallow structure - There's rarely a need to go below H3. Use H1 for the title, H2 for section headings, and H3 for subsections.
+
+4. Image alt text:
+While the main goal of alt text is web accessibility, the SEO goal of the alt attribute is image indexing. 
+The key goal of image alt text is to help users understand the image when it cannot be viewed, say, by a visitor who is vision impaired. In this instance, along with times when, say, there's a problem and the image won't load, the alt text can be used to describe what's in the image, instead of viewing it.
+
+5. Schema markup:
+Schema markup is used to enhance regular SERP snippets with rich snippet features.
+Schema.org hosts a collection of tags developed jointly by Google, Bing, Yahoo!, and Yandex, and the tags are used by webmasters to provide search engines with additional information about different types of pages. In turn, search engines use this information to enhance their SERP snippets with various rich features.
+
+6. HTML5 semantic tags:
+HTML5 elements are used for better descriptions of various page components.
+
+7. Meta robots tag:
+Robots meta tag is all about the rules of engagement between the websites and the search engines.
+Meta robots tag should be placed in the head section of the page code, and it should specify which crawlers it addresses and which instructions should be applied:
+
+Address robots by name - Use robots if your instructions are for all crawlers, but use specific names to address individual crawlers. Google’s standard web crawler, for example, is called Googlebot. Addressing individual robots is usually done to ban malicious crawlers from the page while allowing well-intentioned crawlers to carry on.​
+Match instructions to your goals - You’d normally want to use robots meta tags to keep search engines from indexing documents, internal search results, duplicate pages, staging areas, and whatever else you don’t want to show up in search.
+Below are some of the parameters most commonly used with robots meta tags. You can use any number of them in a single meta robots tag, separated by a comma:
+
+noindex — page should not be indexed
+nofollow — links on the page should not be followed
+follow — links on the page should be followed, even if the page is not to be indexed
+noimageindex — images on the page should not be indexed
+noarchive — search results should not show a cached version of the page
+unavailable_after — page should not be indexed beyond a certain date.
+
+8. Canonical tag:
+Canonical tag spares you from the risk of duplicate content:
+The gist of it is that any given page, through no fault of your own, can have several addresses. Sometimes they result from various artifacts - like http/https and various tracking tags - and other times they result from various sorting and customization options available in product catalogs.
+It’s not a big problem, to be honest, except that all those addresses might be taxing on the crawl budget, and on your page authority, and it can also mess with your performance tracking. The alternative is to use a canonical tag to tell a search engine which of those page addresses is the main one.
+
+Best practices
+To avoid potential SEO complications, apply the canonical tag to the following pages:
+
+-Pages available via different URLs
+-Pages with very similar content
+-Dynamic pages that create their own URL parameters
+
+9. Open Graph tags:
+Open Graph (OG) tags are placed in the <head> section of a page and allow any webpage to become a rich object in social networks.
+
+In HTML, it can look like this:
+<meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
+
+SEO value:
+
+OG tags let you control how the information about your page is represented when shared via social channels. 
+This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions.
+
+There are quite a few Open Graph tags:
+
+OG title: 
+Yep, that’s another tag with the title of your page. So now you have three different titles: one is for search (title tag - title of the webpage document), one is for your website (H1), and  the third one is for social networks (OG title). You can copy any of the other titles and keep things simple or you can come up with a separate title for social sharing.
+Keep in mind that it should be between 60-90 characters, otherwise, it may be truncated.
+
+OG type:
+Use this tag to describe what kind of object you are sharing: a website, post, video, company, etc. http://ogp.me/#types
+This tag is considered important when your page has the Like button. It may help to determine whether your content will appear in the Facebook user's interest section in case she or he "Likes" it.
+In most cases, the type is "website", because you mostly share links to websites. If so, you do not need to specify the type in the code, it will be read as such by default.
+
+OG description:
+This one is very similar to the meta description tag. However, it won't be displayed in SERPs, it will be shown as the summary when your page is shared. For this reason, there is no point in craftily sneaking your keywords into this particular description.
+Your main task here is to make it speak to your potential audience and drive more clicks.
+
+OG image
+An image will make your shareable link much more attractive. Some text over the image is acceptable, but try to place it in the middle of an image, as some platforms will trim the edges. 
+The recommended resolution for the OG image is 1200x627 pixels, the size — up to 5MB.
+Once you are done with your OG meta tags, you can check how everything looks like with the help of Open Graph Object Debugger, a tool created by Facebook.
+
+Twitter cards
+Twitter cards are very similar to OG tags (title, description, image, etc.), but they are used exclusively by Twitter. Though now tweets can exceed 140 characters, these cards are a nice extension that allows your tweet to stand out in the crowd of common text tweets.
+
+
+
+Here are all the HTML tags that still matter:
+
+Title tag
+Meta description tag
+Headings
+Alt attribute
+Open Graph tags
+Robots tag
+Canonical tag
+Schema markup
+HTML5 semantic tags
+
+-->

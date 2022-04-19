@@ -1,0 +1,6 @@
+<img src=" " usemap=#mapname>
+	<map name="mapname">
+		<area shape=" " coords=" " href=" " alt=" " target=" ">
+	</map>
+
+img and area are empty/self closing tags.

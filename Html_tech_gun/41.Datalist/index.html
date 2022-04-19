@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>datalist</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="textone"
+        id="one"
+        list="list"
+        autocomplete="off"
+      /><!--list attribute value indicates the datalist which should be suggested while giving the input-->
+      <datalist id="list">
+        <option value="orange">orange</option>
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="pineapple">pineapple</option>
+      </datalist>
+    </form>
+  </body>
+</html>
+<!--
+The option element represents an option in a select element or as 
+part of a list of suggestions in a datalist element.
+-->

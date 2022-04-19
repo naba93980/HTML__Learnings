@@ -1,0 +1,5 @@
+The href attribute specifies the location (URL) of a resource, the link moves into, or the location of a linked resource(to be used without embedding), like a stylesheet. While the src attribute is used to embed a resource - usually using URLs - into a document
+
+
+
+Mane src resource is already loaded & present in the webpage, while href resource is something that will load once u click that link, or href resource is something that is not external entity loaded or present in the webpage but gives information(style of the webpage,icon of webpage in title bar of browser etc) about the webpage.

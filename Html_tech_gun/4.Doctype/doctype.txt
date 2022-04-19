@@ -1,0 +1,27 @@
+html is not the only type of document used in browser,
+there are many other type of document like mathml, svg
+
+<!DOCTYPE html>
+
+tells the browser that the document is of type html5.
+
+<!-- The <!DOCTYPE html> is not actually an element or HTML tag. It lets the browser know how the document should be interpreted, 
+    by indicating what version or standard of HTML is being used.-->
+
+<!--The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect-->
+
+<!--
+    
+In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition, i.e definition of the type the document is of ).
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+-->
+
+if we dont declare the doctype then the browser will read entire file only after that it will understand 
+what is the type of the document, and then render the webpage as per the rules of that document type.
+so it will take more time.
+if we declare doctype at the beginning then broswer will know right from beggining 
+what rules based on doctype to apply to render the webpage.

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>radio button</title>
+  </head>
+  <body>
+    <form>
+      <label><input type="radio" name="gender" value="male" />option 1</label>
+      <label><input type="radio" name="gender" value="female" />option 2</label>
+      <label
+        ><input type="radio" name="gender" value="lgbqt" checked />option 3
+      </label>
+      <br />
+      <!--
+
+        The id of a labelable form-related element in the same document as the <label> element. 
+        The first element in the document with an id matching the value of the for attribute is the labeled 
+        control for this label element.
+
+        A <label> element can have both a for attribute and a contained control element, 
+        as long as the for attribute points to the contained control element.
+
+        name and value in input elements are usually the key value pairs at the backend server
+      -->
+      <input type="radio" id="gender1" name="emptype" value="male" />
+      <label for="gender1">developer</label>
+      <input type="radio" id="gender2" name="emptype" value="female" />
+      <label for="gender2">driver</label>
+    </form>
+  </body>
+</html>
+<!--
+The label element represents a caption in a user interface. The caption can be 
+associated with a specific form control, known as the label element's labeled control, 
+either using the for attribute, or by putting the form control inside the label element itself.
+
+-->
+<!--name attribute is used to give name to the input element so that it can be easily identified at the 
+  backend server once submitted, it is usually the key in a key value pair which is processed at the server-->
+
+<!--
+The content of value attribute represents the value to be submitted with the form.
+Checked attribute is used for default selection.
+-->
+
+<!--
+
+A radio group is defined by giving each of radio buttons in the group the same name. Once a radio group is established, selecting any radio button in that group automatically deselects any currently-selected radio button in the same group.
+You can have as many radio groups on a page as you like, as long as each has its own unique name.
+
+
+When the above form is submitted with a radio button selected, the form's data includes an entry in the form gender=value. For example, if the user clicks on the "option 1" radio button then submits the form, the form's data will include the line gender=male.
+
+If no radio button is selected when the form is submitted, the radio group is not included in the submitted form data at all, since there is no value to report.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio
+-->
+
+<!--
+A form is a component of a Web page that has form controls, such as text fields, buttons, checkboxes, range controls, or color pickers. A user can interact with such a form, providing data that can then be sent to the server for further processing
+A form control is a user interface control that serves as the point of connection between the user and the server. Interactions vary by control type: buttons: button file handling: input type="file" menus: select, etc. And are also grouped into categories
+Controls are essentially an API of key-value pairs for pinging back and forth to the server.
+
+-->
+<!--
+
+Form elements' are the (usually interactive) controls whose values are submitted automatically with the http request that is initiated by clicking the "submit" button - even without javaScript. Most commonly this would be button, input, textarea and similar element types. 
+Anything where a value attribute is meaningful or expected can be a form element. The name attribute is also important, since this is used (e.g. on the server side) as a 'key' for the value in the form data.
+
+The supporting elements such as label, fieldset and legend are commonly regarded as form elements, since they exist to name and group the other form elements from the user's point of view, although they contribute nothing to the submitted form data.
+
+There may be elements in the form which have no 'value' attribute (e.g. headings, hyperlinks or images), but strictly speaking, these are not 'form elements'. They may however contribute to the form data via client-side javaScript.
+
+And you can use form elements in something which is not a form, or which makes parameterised http requests without an explicit form element. This is very common.
+
+
+https://stackoverflow.com/questions/37853473/html-elements-that-could-trigger-an-http-request
+
+
+-->

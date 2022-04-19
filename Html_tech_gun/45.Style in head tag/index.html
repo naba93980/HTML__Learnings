@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stylesheet</title>
+    <!-- rel attribute here says the linked image is icon of this webpage document-->
+    <link rel="stylesheet" type="text/css" href="color.css" />
+    <style>
+      p {
+        background-color: aqua;
+      }
+    </style>
+    <!--style element can also be used to style a document, by writing style element contents within head element of the document-->
+  </head>
+  <body>
+    <p>naba</p>
+  </body>
+</html>
+
+<!--This attribute names a relationship of the linked document to the current document. -->
+<!--
+
+The href attribute specifies the location (URL) of a resource, the link moves into, or the location of a linked resource(to be used without embedding), like a stylesheet. While the src attribute is used to embed a resource - usually using URLs - into a document
+Mane src resource is already loaded & present in the webpage, while href resource is something that will load once u click that link, or href resource is something that is not external entity loaded or present in the webpage but gives information(style of the webpage,icon of webpage in title bar of browser etc) about the webpage.
+
+Also href attribute load new page in any previous, current or new browsing context.
+while src whenever loads something in current webpage that requires new browsing context, it loads new browing context in a nested way.(eg. iframe, embed, object elments loads resources referred by src in nested browsing context inside the current webpage)
+
+
+type attribute is used to define the type of the content linked to. The value of the attribute should be a MIME type such as 
+text/html, text/css, and so on. The common use of this attribute is to define the type of stylesheet being referenced 
+(such as text/css), but given that CSS is the only stylesheet language used on the web, not only is it possible to omit the 
+type attribute, but is actually now recommended practice. It is also used on rel="preload" link types, to make sure the browser 
+only downloads file types that it supports.
+
+-->

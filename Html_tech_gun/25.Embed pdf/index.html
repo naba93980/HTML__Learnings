@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>embed pdf</title>
+  </head>
+  <body>
+    <!--The embed element provides an integration point for an external (typically non-HTML) application or interactive content.-->
+    <embed
+      src="Resume.pdf"
+      type="application/pdf"
+      height="300px"
+      width="250px"
+    />
+    <iframe src="Resume.pdf" height="300px" width="250px"></iframe>
+    <!--iframe represents a nested browser context-->
+    <object data="Resume.pdf" height="600px" width="500px"></object>
+  </body>
+</html>
+
+<!--
+
+<iframe>
+The iframe element represents a nested browsing context. HTML 5 standard - "The <iframe> element"
+Primarily used to include resources from other domains or subdomains but can be used to include content from the same domain as well. 
+The <iframe>'s strength is that the embedded code is 'live' and can communicate with the parent document.
+
+-->
+
+<!--
+
+<embed>
+Standardised in HTML 5, before that it was a non standard tag, which admittedly was implemented by all major browsers. 
+Behaviour prior to HTML 5 can vary.
+The embed element provides an integration point for an external (typically non-HTML) application or interactive content. 
+Used to embed content for browser plugins. 
+
+-->
+
+<!--
+
+<object>
+The <object> element can represent an external resource, which, depending on the type of the resource, will either be treated as an image,
+as a nested browsing context, or as an external resource to be processed by a plugin. 
+
+-->
+
+<!--
+
+A browsing context is the environment in which a browser displays a Document. In modern browsers, it usually is a tab, 
+but can be a window or even only parts of a page, like a frame or an iframe.
+
+-->
+
+<!--
+
+The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, 
+which is the DOM tree.
+The DOM tree includes elements such as <body> and <table>, among many others.
+
+-->

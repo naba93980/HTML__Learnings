@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>input type attribute</title>
+  </head>
+  <body>
+    <form enctype="multipart/form-data">
+      <input
+        autofocus
+        type="text"
+        value="nabajyoti"
+        readonly
+        size="35"
+        maxlength="20"
+      /><!--value in input tag denotes default text/number etc present initially by default in that input field, readonly means u cant edit the default text -->
+      <!--size attributes denotes amount of space visible for the input field-->
+      <!--max length denotes maximum amount of characters that can be entered in input textfield-->
+
+      <input
+        type="text"
+        placeholder="enter ur name baba"
+        autocomplete="on"
+        required
+      />
+      <!--placeholder is used to give hint, requiured attribute makes it mandatory to fill in the text field-->
+
+      <input type="submit" value="go" />
+      <input
+        type="submit"
+        value="go"
+        disabled
+      /><!--disable attribute disables the input field of the given type-->
+      <input
+        autofocus
+        name="nombor"
+        type="number"
+        min="10"
+        max="500"
+        step="3"
+      /><!--max and min value u can enter, applicable with range, date, number, step attributes says the gap between cureent and next value-->
+
+      <input
+        type="text"
+        placeholder="enter ur name baba"
+        autocomplete="on"
+        required
+      /><!--autocomplete attribute is used to ask browser to give suggestion based on the previous inputs submitted to backend server-->
+
+      <p>NAME :</p>
+      <input type="text" name="firstname" /><br />
+      <input type="text" name="lastname" /><br />
+      <input type="text" name="middlename" />
+      <!--name attribute is used to give name to the input element so that it can be easily identified at the backend server once submitted, it is usually the key in a key value pair which is processed at the server-->
+      <br />
+
+      <textarea name="TEXTAREA" id="" cols="30" rows="10"></textarea>
+      <!-- textarea does not require input type, only textarea tag is sufficient -->
+    </form>
+  </body>
+</html>
